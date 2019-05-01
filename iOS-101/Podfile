@@ -1,0 +1,9 @@
+
+target 'iOS-101' do
+    use_frameworks!
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
+    pod 'ObjectMapper'
+    pod 'Kingfisher'
+    pod 'SDWebImage'
+end

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentTableViewCell" rowHeight="84" id="KGk-i7-Jjw" customClass="CommentTableViewCell" customModule="iOS_101" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="83.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="article-user-pic" translatesAutoresizingMaskIntoConstraints="NO" id="Zg8-6C-iJb">
+                        <rect key="frame" x="19" y="19" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Se3-G0-og9"/>
+                            <constraint firstAttribute="width" constant="40" id="WfB-lk-BRN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Очень познавательно!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPd-fh-lBm">
+                        <rect key="frame" x="68" y="45" width="151" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Алексей Романов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekH-YI-yuU">
+                        <rect key="frame" x="71" y="19" width="119.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11 янв, 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9u-rF-tnp">
+                        <rect key="frame" x="222.5" y="19" width="78.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ekH-YI-yuU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="0Y9-4r-oOV"/>
+                    <constraint firstItem="X9u-rF-tnp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="CiG-15-o8Q"/>
+                    <constraint firstItem="ekH-YI-yuU" firstAttribute="leading" secondItem="Zg8-6C-iJb" secondAttribute="trailing" constant="12" id="UuP-QN-3Iw"/>
+                    <constraint firstItem="bPd-fh-lBm" firstAttribute="top" secondItem="ekH-YI-yuU" secondAttribute="bottom" constant="9" id="Xph-VD-hE9"/>
+                    <constraint firstItem="Zg8-6C-iJb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="19" id="aaJ-De-qeT"/>
+                    <constraint firstAttribute="bottom" secondItem="bPd-fh-lBm" secondAttribute="bottom" constant="21.5" id="b2b-59-1MX"/>
+                    <constraint firstItem="bPd-fh-lBm" firstAttribute="leading" secondItem="Zg8-6C-iJb" secondAttribute="trailing" constant="9" id="hDw-St-2Nm"/>
+                    <constraint firstAttribute="trailing" secondItem="X9u-rF-tnp" secondAttribute="trailing" constant="19" id="tCv-tb-g0r"/>
+                    <constraint firstItem="Zg8-6C-iJb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="yRA-Ec-bCq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="commentLabel" destination="bPd-fh-lBm" id="MQt-Sq-ttP"/>
+                <outlet property="imagesView" destination="Zg8-6C-iJb" id="CzH-ED-cvB"/>
+                <outlet property="nameLabel" destination="ekH-YI-yuU" id="TF9-6v-dHv"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="74"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="article-user-pic" width="200" height="200"/>
+    </resources>
+</document>
